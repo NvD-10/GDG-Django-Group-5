@@ -31,4 +31,3 @@ class PostViewSet(viewsets.ModelViewSet):
         if self.request.user != instance.user:
             raise PermissionDenied("You can only delete your own posts.")
         instance.delete()
-
